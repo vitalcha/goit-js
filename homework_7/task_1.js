@@ -110,7 +110,7 @@
 // images.forEach(el => {
 // const img = document.createElement('img');
 // img.src = el.url;
-// imgStr += `<li><img src=${el.url}></li>`;
+// imgStr += `<li><img src=${el.url} alt=${el.alt}></li>`;
 // });
 // list.insertAdjacentHTML('afterbegin', imgStr);
 

@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 
 #validation-input {
   border: 3px solid #bdbdbd;
@@ -15,4 +21,13 @@
 
 #validation-input.invalid {
   border-color: #f44336;
+}
+
+#gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border: 3px #444444;
+  list-style: none;
 }
