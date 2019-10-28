@@ -1,56 +1,23 @@
+// task 1 
+// Переключатель цветов
+// Есть массив цветов в hex-формате и кнопки Start и Stop.
 
-// const account = {
-//   owner: 'Mango',
-//   balance: 24000,
-//   discount: 0.1,
-//   orders: ['order-1', 'order-2', 'order-3'],
-//   changeDiscount(value) {
-//     this.discount = value;
-//   },
-//   getOrders() {
-//     return this.orders;
-//   },
-//   addOrder(cost, order) {
-//     this.balance -= cost;
-//     orders.push(order);
-//   },
+// <button type="button" data-action="start">Start</button>
+// <button type="button" data-action="stop">Stop</button>
+// const colors = [
+//   '#FFFFFF',
+//   '#2196F3',
+//   '#4CAF50',
+//   '#FF9800',
+//   '#009688',
+//   '#795548',
+// ];
+// Напиши скрипт, который после нажатия кнопки Start, раз в секунду меняет цвет фона body на случайное значение из массива используя инлайн-стиль. При нажатии на кнопку Stop, изменение цвета фона должно останавливаться.
+
+// ⚠ Учти, на кнопку Start можно нажать бесконечное количество раз. Сделай так, чтобы пока изменение темы запушено, кнопка Start была не активна.
+
+// Для генерации случайного числа (индекс элемента массива цветов), используй функцию randomIntegerFromInterval.
+
+// const randomIntegerFromInterval = (min, max) => {
+//   return Math.floor(Math.random() * (max - min + 1) + min);
 // };
-
-// account.changeDiscount(0.15);
-// console.log(account.discount); // 0.15
-
-// const orders = account.getOrders();
-// console.log(orders); // ['order-1', 'order-2', 'order-3']
-
-// account.addOrder(5000, 'order-4');
-// console.log(account.balance); // 19000
-// console.log(account.orders); // ['order-1', 'order-2', 'order-3', 'order-4']
-
-// Задание 2
-
-// Исправь ошибки которые будут в консоли, чтобы скрипт заработал.
-
-// const inventory = {
-//   items: ['Монорельса', 'Фильтр'],
-//   add(itemName) {
-//     this.items.push(itemName);
-//   },
-//   remove(itemName) {
-//     this.items = this.items.filter(item => item !== itemName);
-//   },
-// };
-
-// const invokeInventoryAction = function(itemName, action) {
-//   console.log(`Invoking ${action.name} opeartion on ${itemName}`);
-//   action(itemName);
-// };
-
-// invokeInventoryAction('Аптечка', inventory.add.bind(inventory));
-// // Invoking add opeartion on Аптечка
-
-// console.log(inventory.items); // ['Монорельса', 'Фильтр', 'Аптечка']
-
-// invokeInventoryAction('Фильтр', inventory.remove.bind(inventory));
-// // Invoking remove opeartion on Фильтр
-
-// console.log(inventory.items); // ['Монорельса', 'Аптечка']
