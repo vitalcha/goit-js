@@ -13,7 +13,7 @@
 
 //   })
 export default function fetchCountries(searchQuery) {
-  fetch(`https://restcountries.eu/rest/v2/name/${searchQuery}`)
+ return fetch(`https://restcountries.eu/rest/v2/name/${searchQuery}`)
   .then(resp => resp.json())
-  .then(resData => console.log(resData));
+  // .then(resData => console.log(resData));
  };

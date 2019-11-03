@@ -13,5 +13,19 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  background-image: url('images/bg-pattern.png');
+  background-image: url(https://image.freepik.com/free-vector/spot-light-background_1284-4685.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.ui-pnotify.custom .ui-pnotify-container {
+  background-color: #ff4800;
+  background-image: none;
+  border: none;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
 }
