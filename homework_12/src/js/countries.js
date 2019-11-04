@@ -49,7 +49,7 @@ console.log(input);
 const ul = document.querySelector('.country');
 console.log(ul);
 input.addEventListener('input',
-debounce( e => {
+debounce( e => { console.log('debounce');
   fetchCountries(e.target.value)
     .then(data => {
       if (data.length <= 11 && data.length !== 1) {
